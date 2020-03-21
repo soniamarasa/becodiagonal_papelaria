@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Beco Diagonal - Papelaria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://kit.fontawesome.com/a9b0ab3116.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="media/bdicon.png">
+
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-background">
+
+
+
+            <div id="divBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar..." />
+                <i class="fas fa-search search"></i>
+            </div>
+
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="sobre.html" class="nav-link">SOBRE</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">CONTATO</a>
+                    </li>
+
+                    <li class="nav-item divisor"></li>
+
+
+                    <li class="nav-item">
+                        <a href="minhaconta.index" class="nav-link">MINHA CONTA</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">ENTRAR/CADASTRAR</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </nav>
+
+        <div id="imagemcab">
+            <a href="index.html" class="imagembd"> <img src="media/BD C.png" alt="Beco Diagonal Papelaria"
+                    class="imagembd"></a>
+        </div>
+
+    </header>
+
+
+    <nav class="categorias navbar navbar-expand-md navbar-cat ">
+
+        <span> CATEGORIAS: </span>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-categoria">
+            <i class="fas fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-categoria">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Caderno Inteligente</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">Canetas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">Cadernetas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">Marcadores</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">Papeis</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">Post-it</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">Washi tapes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <article>
+        <div class="container">
+            <div class="col-md-6">
+                <section>
+                    <h2 id="login">CADASTRO DE CLIENTE</h2>
+                    <form id="cadastro">
+                        <div class="form-group">
+                            <label for="nomeCompleto">Nome completo</label>
+                            <input type="text" class="form-control" id="nomeCompleto" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="nomeCompleto">CPF</label>
+                            <input type="number" class="form-control" id="nomeCompleto" aria-describedby="emailHelp"
+                                placeholder="Somente números">
+                        </div>
+                        <div class="form-group">
+                            <label for="dataNasc">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="dataNasc" aria-describedby="emailHelp"
+                                placeholder="DD/MM/AAAA">
+                        </div>
+
+                        <div class="form-group">
+                            <div for="genero" class="">
+                                Gênero:
+                            </div>
+                            <label>
+                                <input type="radio" id="genero" name="gender" value="M">
+                                Masculino
+                            </label>
+                            <label>
+                                <input type="radio" id="genero" name="gender" value="F">
+                                Feminino
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phonenumber">Telefone</label>
+                            <input type="number" class="form-control" id="phonenumber" aria-describedby="emailHelp">
+                            <label for="celnumber">Celular</label>
+                            <input type="number" class="form-control" id="celnumber" aria-describedby="emailHelp">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="cep">CEP</label>
+                            <input id="cep" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="logradouro">Logradouro</label>
+                            <input id="logradouro" type="text" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="numero">Número</label>
+                            <input id="numero" type="text" class="form-control" required>
+
+                            <label for="complemento">Complemento</label>
+                            <input id="complemento" type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bairro">Bairro</label>
+                            <input id="bairro" type="text" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cidade">Cidade</label>
+                            <input id="cidade" type="text" class="form-control" required>
+
+                            <label for="uf">Estado</label>
+                            <select id="uf" class="form-control">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="password">Digite uma senha</label>
+                            <input type="password" class="form-control" id="password"
+                                placeholder="Deve conter de 6 à 12 caracteres">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Confirme a senha</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="lembrarSenha">
+                            <label class="form-check-label" for="lembrarSenha">Lembrar senha</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button> <br>
+                        <small> Esqueceu a sua senha? <a href="">Clique aqui</a></small>
+                    </form>
+                </section>
+            </div>
+
+
+        </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="media/beco-diagonal2.png" class="imgfooter">
+                </div>
+
+
+                <div class="col-md-3 redessociais">
+                    <h5>REDES SOCIAIS</h5>
+
+                    <div>
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        &nbsp;
+                        <a href=""> <i class="fab fa-instagram-square"></i> </a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <h5>ONDE ESTAMOS</h5>
+                    <p>Rua Florentina Murad, 151 <br>
+                        Jardim das Oliveiras<br>
+                        15047-034
+                        São José do Rio Preto/SP<br>
+                        Telefone: (17) 3237-6231<br>
+                        contato@bdpapelaria.com</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>FORMAS DE PAGAMENTO</h5>
+                    <p>Débito, Crédito, boleto, depósito bancário</p>
+                    <img src="media/bandeirascartoes.png" class="imgfooter">
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+   <!--><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>-->
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+        $("#cep").focusout(function () {
+            //Início do Comando AJAX
+            $.ajax({
+                //O campo URL diz o caminho de onde virá os dados
+                //É importante concatenar o valor digitado no CEP
+                url: 'https://viacep.com.br/ws/' + $(this).val() + '/json/unicode/',
+                //Aqui você deve preencher o tipo de dados que será lido,
+                //no caso, estamos lendo JSON.
+                dataType: 'json',
+                //SUCESS é referente a função que será executada caso
+                //ele consiga ler a fonte de dados com sucesso.
+                //O parâmetro dentro da função se refere ao nome da variável
+                //que você vai dar para ler esse objeto.
+                success: function (resposta) {
+                    //Agora basta definir os valores que você deseja preencher
+                    //automaticamente nos campos acima.
+                    $("#logradouro").val(resposta.logradouro);
+                    $("#complemento").val(resposta.complemento);
+                    $("#bairro").val(resposta.bairro);
+                    $("#cidade").val(resposta.localidade);
+                    $("#uf").val(resposta.uf);
+                    //Vamos incluir para que o Número seja focado automaticamente
+                    //melhorando a experiência do usuário
+                    $("#numero").focus();
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
