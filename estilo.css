@@ -1,0 +1,178 @@
+/*
+ @author Sônia Mara de Sá
+*/
+
+body {
+    background-color:#f2f2f2;
+}
+
+
+a:link {
+    text-decoration:none;   
+}
+a:visited {
+    text-decoration:none;  
+}
+a:hover {
+    text-decoration:none;   
+}
+
+
+header {
+    background-color: #2F2D3E;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    
+}
+
+#imagemcab {
+    height: 10em;
+  
+}
+
+.imagembd { 
+    height: inherit;
+}
+
+
+#divBusca{
+    margin-left: 5%;
+    border:solid 1px #c4943d;
+    border-radius:20px;
+    min-width:150px;
+    width: 300px;
+    
+}
+
+#txtBusca{
+    color: white;
+    float: left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:14px;
+    border:none;
+    height:25px;
+    min-width:110px;
+    width: 270px;
+    outline: none;
+}
+
+.categorias{
+    background-color: #c4943d;
+}
+
+
+nav.navbar-background{
+	background:#2F2D3E;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+	color: #d1ab66;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color: white;
+}
+
+.navbar-light .navbar-toggler{
+	color: #c4943d;
+    border-color: #2F2D3E;
+}
+
+.divisor{
+	width: 1px;
+	background: #c4943d;
+	margin: 12px 15px;
+}
+
+
+.navbar-cat .nav-link{
+    color: #2F2D3E; 
+}
+
+.navbar-cat .nav-link:hover{
+    color: white;
+}
+
+.navbar-cat .navbar-toggler{
+    color: #2F2D3E;
+	border-color: #c4943d;
+}
+
+.search {
+    color: #c4943d;
+    align-items: right;
+}
+
+h4 {
+    background: linear-gradient(90deg, #C5C2D3, #f2f2f2);
+    color: #c4943d;
+    padding: 4px;
+
+}
+
+h5 {
+    color: #c4943d
+}
+
+
+footer{
+	background:#2F2D3E;
+	padding: 30px 0px 20px 0;
+    position: relative;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 2em;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    text-size-adjust: 30px;
+}
+
+footer a:link{
+    color: #c4943d;
+    font-size: 50px ;
+}
+footer a:hover{
+    color: #c4943d;
+    font-size: 50px ;
+}
+
+.imgfooter {
+  width: inherit;
+}
+
+.redessociais {
+   text-align: center;
+}
+
+.imgpro {
+    width: inherit;
+    
+    text-align: center;
+}
+
+
+.imgpro p, h6{
+    color: black;
+}
+
+.imgpro p{
+    padding-top: 1em;
+    font-weight: bold;
+}
+
+section {
+    margin: 1em 0;
+    padding-bottom: 1em;
+}
+
+.button {
+    padding-top: 1em;
+    text-align: center;
+}
