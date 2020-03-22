@@ -187,8 +187,10 @@ section {
 
 
 h2{
-   padding-bottom: 1em;
+   padding-bottom: 1.5em;
+   padding-top: 0.5em;
    color: #2F2D3E;
+   text-align: center;
 }
 
 #principal {
@@ -223,9 +225,34 @@ legend {
         font-style:italic;
         font-size:14px;
         height:25px;
-        width: 100px;
+        width: 120px;
         outline: none;
     }
 
+}
 
+
+#container {
+	width: 95%;
+	background-color: #DFDEE7;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 40px;
+    text-align: center;
+    padding: 15px;
+}
+
+#container img {
+	width: 120px;
+	height: 120px;
+	margin-top: -80px;
+    margin-bottom: 30px;
+    border-radius: 80px;
+    
+}
+
+#cadastroc {
+    text-align: justify;
 }

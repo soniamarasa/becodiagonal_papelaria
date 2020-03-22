@@ -82,13 +82,13 @@
 
                 <li class="dropdown nav-item">
                     <a data-toggle="dropdown" class="dropdown-toggle nav-link js-scroll-trigger">Canetas</a>
-                     <ul class="dropdown-menu">
-                          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#">Brush Pen</a></li>
-                          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#">Esferográficas</a></li>
-                          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#">Gel</a></li>
-                          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#">Hidrográficas</a></li>  
-                      </ul>
-                  </li>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#">Brush Pen</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#">Esferográficas</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#">Gel</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#">Hidrográficas</a></li>
+                    </ul>
+                </li>
 
                 <li class="nav-item">
                     <a href="" class="nav-link">Cadernetas</a>
@@ -96,11 +96,12 @@
 
                 <li class="dropdown nav-item">
                     <a data-toggle="dropdown" class="dropdown-toggle nav-link js-scroll-trigger">Marcadores</a>
-                     <ul class="dropdown-menu">
-                          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#">Marcadores Artisticos </a></li>
-                          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#">Marca-Texto </a></li>  
-                      </ul>
-                  </li>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#">Marcadores Artisticos </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#">Marca-Texto </a></li>
+                    </ul>
+                </li>
 
                 <li class="nav-item">
                     <a href="" class="nav-link">Papeis</a>
@@ -117,37 +118,37 @@
         </div>
     </nav>
 
+    <div class="container">
+        <h2>CADASTRO</h2>
 
-    <article>
-        <div class="container">
-            <div id="principal" class="col-md-10">
-                <section>
-                    <h2 id="login">CADASTRO DE CLIENTE</h2>
+        <div id="container">
 
-                    <form>
-                        <fieldset>
-                            <legend>DADOS PESSOAIS</legend>
-                            <div class="form-row">
-                                <div class="form-group col-md-8">
-                                    <label for="nomeCompleto">Nome completo</label>
-                                    <input type="text" class="form-control" id="nomeCompleto"
-                                        aria-describedby="emailHelp">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="nomeCompleto">CPF</label>
-                                    <input type="number" class="form-control" id="nomeCompleto"
-                                        aria-describedby="emailHelp" placeholder="Somente números">
-                                </div>
+            <img src="media/perfil.png">
+
+            <div id="cadastroc">
+                <form>
+                    <fieldset>
+                        <legend>DADOS PESSOAIS</legend>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="nomeCompleto">Nome completo</label>
+                                <input type="text" class="form-control" id="nomeCompleto" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="nomeCompleto">CPF</label>
+                                <input type="number" class="form-control" id="cpf" aria-describedby="emailHelp"
+                                    placeholder="Somente números">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="dataNasc">Data de Nascimento</label>
+                                <input type="date" class="form-control" id="dataNasc" aria-describedby="emailHelp"
+                                    placeholder="DD/MM/AAAA">
                             </div>
 
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="dataNasc">Data de Nascimento</label>
-                                    <input type="date"  class="form-control" id="dataNasc" aria-describedby="emailHelp"
-                                        placeholder="DD/MM/AAAA">
-                                </div>
-
-                                <!-- <div class="form-group col-md-6">
+                            <!-- <div class="form-group col-md-6">
                                 <div for="genero" class="">
                                     Gênero:
                                 </div>
@@ -162,148 +163,148 @@
                             </div> -->
 
 
-                                <div class="form-group col-md-5">
+                            <div class="form-group col-md-5">
 
-                                    <label>Genero: </label><br>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="genero1" name="genero" class="custom-control-input"
-                                            value="F">
-                                        <label class="custom-control-label" for="genero1">Feminino</label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="genero2" name="genero" class="custom-control-input"
-                                            value="M">
-                                        <label class="custom-control-label" for="genero2">Masculino</label>
-                                    </div>
+                                <label>Genero: </label><br>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="genero1" name="genero" class="custom-control-input"
+                                        value="F">
+                                    <label class="custom-control-label" for="genero1">Feminino</label>
                                 </div>
-
-                            </div>
-
-                            <div class="form-row">
-
-                                <div class="form-group col-md-6">
-                                    <label for="phonenumber">Telefone</label>
-                                    <input type="tel" class="form-control telefone" id="phonenumber"
-                                        aria-describedby="emailHelp" >
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="celnumber">Celular</label>
-                                    <input type="tel" class="form-control telefone" id="celnumber" aria-describedby="emailHelp">
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>ENDEREÇO</legend>
-
-                            <div class="form-row">
-                                <div class="form-group col-md-4">
-                                    <label for="cep">CEP</label>
-                                    <input id="cep" type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group col-md-8">
-                                    <label for="logradouro">Logradouro</label>
-                                    <input id="logradouro" type="text" class="form-control" required>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="genero2" name="genero" class="custom-control-input"
+                                        value="M">
+                                    <label class="custom-control-label" for="genero2">Masculino</label>
                                 </div>
                             </div>
 
-                            <div class="form-row">
-                                <div class="form-group col-md-2">
-                                    <label for="numero">Número</label>
-                                    <input id="numero" type="text" class="form-control" required>
-                                </div>
+                        </div>
 
-                                <div class="form-group col-md-6">
-                                    <label for="bairro">Bairro</label>
-                                    <input id="bairro" type="text" class="form-control" required>
-                                </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="phonenumber">Telefone</label>
+                                <input type="tel" class="form-control telefone" id="phonenumber"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="celnumber">Celular</label>
+                                <input type="tel" class="form-control telefone" id="celnumber"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </fieldset>
 
-                                <div class="form-group col-md-4">
-                                    <label for="complemento">Complemento</label>
-                                    <input id="complemento" type="text" class="form-control">
-                                </div>
+                    <fieldset>
+                        <legend>ENDEREÇO</legend>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="cep">CEP</label>
+                                <input id="cep" type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="logradouro">Logradouro</label>
+                                <input id="logradouro" type="text" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <label for="numero">Número</label>
+                                <input id="numero" type="text" class="form-control" required>
                             </div>
 
-
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="cidade">Cidade</label>
-                                    <input id="cidade" type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="uf">Estado</label>
-                                    <select id="uf" class="form-control">
-                                        <option value="AC">Acre</option>
-                                        <option value="AL">Alagoas</option>
-                                        <option value="AP">Amapá</option>
-                                        <option value="AM">Amazonas</option>
-                                        <option value="BA">Bahia</option>
-                                        <option value="CE">Ceará</option>
-                                        <option value="DF">Distrito Federal</option>
-                                        <option value="ES">Espírito Santo</option>
-                                        <option value="GO">Goiás</option>
-                                        <option value="MA">Maranhão</option>
-                                        <option value="MT">Mato Grosso</option>
-                                        <option value="MS">Mato Grosso do Sul</option>
-                                        <option value="MG">Minas Gerais</option>
-                                        <option value="PA">Pará</option>
-                                        <option value="PB">Paraíba</option>
-                                        <option value="PR">Paraná</option>
-                                        <option value="PE">Pernambuco</option>
-                                        <option value="PI">Piauí</option>
-                                        <option value="RJ">Rio de Janeiro</option>
-                                        <option value="RN">Rio Grande do Norte</option>
-                                        <option value="RS">Rio Grande do Sul</option>
-                                        <option value="RO">Rondônia</option>
-                                        <option value="RR">Roraima</option>
-                                        <option value="SC">Santa Catarina</option>
-                                        <option value="SP">São Paulo</option>
-                                        <option value="SE">Sergipe</option>
-                                        <option value="TO">Tocantins</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>DADOS DE LOGIN</legend>
-
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                                </div>
-
-                                <div class="form-group col-md-6">
-                                    <label for="email">Confirme o email</label>
-                                    <input type="email" autocomplete="none" class="form-control" id="email" aria-describedby="emailHelp">
-                                </div>
+                            <div class="form-group col-md-6">
+                                <label for="bairro">Bairro</label>
+                                <input id="bairro" type="text" class="form-control" required>
                             </div>
 
-
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="password">Digite uma senha</label>
-                                    <input type="password" class="form-control" id="password"
-                                        placeholder="Deve conter de 6 à 12 caracteres">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="password">Confirme a senha</label>
-                                    <input type="password" class="form-control" id="password">
-                                </div>
+                            <div class="form-group col-md-4">
+                                <label for="complemento">Complemento</label>
+                                <input id="complemento" type="text" class="form-control">
                             </div>
-                        </fieldset>
+                        </div>
 
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="cidade">Cidade</label>
+                                <input id="cidade" type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="uf">Estado</label>
+                                <select id="uf" class="form-control">
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>DADOS DE LOGIN</legend>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="email">Confirme o email</label>
+                                <input type="email" autocomplete="none" class="form-control" id="email"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="password">Digite uma senha</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Deve conter de 6 à 12 caracteres">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="password">Confirme a senha</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="button">
                         <button type="submit" class="btn btn-primary">CADASTRAR </button> <br>
-                        
-                    </form>
-                </section>
+                    </div>
+
+                </form>
             </div>
-
-
         </div>
-        </div>
-    </article>
+    </div>
+
 
     <footer>
         <div class="container">
@@ -361,24 +362,24 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 
 
-<script>
+    <script>
 
-jQuery("input.telefone")
-        .mask("(99) 9999-9999?9")
-        .focusout(function (event) {  
-            var target, phone, element;  
-            target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
-            phone = target.value.replace(/\D/g, '');
-            element = $(target);  
-            element.unmask();  
-            if(phone.length > 10) {  
-                element.mask("(99) 99999-999?9");  
-            } else {  
-                element.mask("(99) 9999-9999?9");  
-            }  
-        });
+        jQuery("input.telefone")
+            .mask("(99) 9999-9999?9")
+            .focusout(function (event) {
+                var target, phone, element;
+                target = (event.currentTarget) ? event.currentTarget : event.srcElement;
+                phone = target.value.replace(/\D/g, '');
+                element = $(target);
+                element.unmask();
+                if (phone.length > 10) {
+                    element.mask("(99) 99999-999?9");
+                } else {
+                    element.mask("(99) 9999-9999?9");
+                }
+            });
 
-</script>
+    </script>
 
 
 
