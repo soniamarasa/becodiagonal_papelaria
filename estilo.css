@@ -38,11 +38,10 @@ header {
 
 
 #divBusca{
-    margin-left: 5%;
     border:solid 1px #c4943d;
     border-radius:20px;
     min-width:150px;
-    width: 300px;
+    width: 250px;
     
 }
 
@@ -56,13 +55,19 @@ header {
     border:none;
     height:25px;
     min-width:110px;
-    width: 270px;
+    width: 220px;
     outline: none;
 }
 
 .categorias, .dropdown-menu{
     background-color: #c4943d;
     color: #2F2D3E;
+    font-weight: bold;
+   
+}
+
+#categorias{
+    
 }
 
 
@@ -215,7 +220,6 @@ legend {
     }
 
     #divBusca{
-        margin-left: 5%;
         width: 120px;
         
     }
@@ -255,4 +259,9 @@ legend {
 
 #cadastroc {
     text-align: justify;
+}
+
+#footer1 {
+    text-align: center;
+    color: #736D96;
 }
