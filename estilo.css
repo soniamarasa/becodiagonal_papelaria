@@ -124,7 +124,7 @@ h4 {
 }
 
 h5 {
-    color: #c4943d
+    color: #c4943d;
 }
 
 
@@ -159,6 +159,11 @@ footer a:hover{
 
 .redessociais {
    text-align: center;
+}
+
+
+.rodape {
+    margin-bottom: 1.5em;
 }
 
 .imgpro {
@@ -233,6 +238,13 @@ legend {
 }
 
 
+@media (max-width: 930px) { 
+ #categoria{
+     font-size: 0.8em;
+ }
+}
+
+s
 #container {
 	width: 95%;
 	background-color: #DFDEE7;
@@ -277,5 +289,7 @@ legend {
 
 #produtosslider {
    margin-bottom: 3em;
+   margin-left: 30px;
+   margin-right: 30px;
 }
 

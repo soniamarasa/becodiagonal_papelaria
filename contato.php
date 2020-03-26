@@ -214,21 +214,18 @@ $msg=0;
     </article>
 
 
-
-
-
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 rodape">
                     <img src="media/beco-diagonal2.png" class="imgfooter">
                 </div>
 
 
-                <div class="col-md-3 redessociais">
+                <div class="col-md-3 rodape">
                     <h5>REDES SOCIAIS</h5>
 
-                    <div>
+                    <div class="redessociais">
                         <a href=""><i class="fab fa-facebook-square"></i></a>
                         &nbsp;
                         <a href=""> <i class="fab fa-instagram-square"></i> </a>
@@ -236,7 +233,7 @@ $msg=0;
 
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 rodape">
                     <h5>ONDE ESTAMOS</h5>
                     <p>Rua Florentina Murad, 151 <br>
                         Jardim das Oliveiras<br>
@@ -246,7 +243,7 @@ $msg=0;
                         contato@bdpapelaria.com</p>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 rodape">
                     <h5>FORMAS DE PAGAMENTO</h5>
                     <p>Débito, Crédito, boleto, depósito bancário</p>
                     <img src="media/bandeirascartoes.png" class="imgfooter">
