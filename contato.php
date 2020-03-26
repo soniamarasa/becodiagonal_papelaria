@@ -1,3 +1,8 @@
+<?php  
+$msg=0;
+@$msg= $_REQUEST['msg'];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -136,65 +141,81 @@
 
 
     <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+        <h2> Entre em contato conosco </h2>
+       
+        <div class="container" id="container">
 
-                    <h2 id="login">CLIENTE NOVO</h2>
+            <img src="media/contato.jpg">
 
-                    <div id="container">
-                        <a href="cadastro.html"><img src="media/perfilcriar.png"> </a>
-                        
-                        <div>
-                            Ainda não possui cadastro na loja? Crie <a href="cadastro.html">AQUI</a> a sua conta.
-                            Caso já possua, é só fazer o login ao lado :)
+
+            <div id="cadastroc">
+
+                <form action="processaForm.php" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nome">Seu Nome</label>
+                            <input type="text" style="text-transform: capitalize" name="nome" class="form-control"
+                                id="nomeCompleto" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Seu email</label>
+                            <input type="email" name="email" class="form-control" id="email"
+                                aria-describedby="emailHelp" required>
                         </div>
                     </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" name="assunto" maxlength="100" class="form-control" id="assunto"
+                                aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phonenumber">Tel./Cel.</label>
+                            <input type="tel" class="form-control telefone" name="phonenumber" id="phonenumber"
+                                aria-describedby="emailHelp">
+                        </div>
 
-
-
-
-                </div>
-
-                <div class="col-md-6">
-
-                    <h2>LOGIN</h2>
-
-                    <div id="container">
-                        <img src="media/perfil.png">
-
-                        <form>
-                            <div class="form-group">
-                                <label for="email">Endereço de email</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                    placeholder="Digite seu e-mail">
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Senha</label>
-                                <input type="password" class="form-control" id="password"
-                                    placeholder="Digite sua senha">
-                            </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="lembrarSenha">
-                                <label class="form-check-label" for="lembrarSenha">Lembrar senha</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Login</button> <br>
-                            <small> Esqueceu a sua senha? <a href="">Clique aqui</a></small>
-                        </form>
                     </div>
 
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="mensagem">Digite aqui a sua mensagem</label>
+                            <textarea maxlength="1000" name="mensagem" class="form-control"
+                                id="exampleFormControlTextarea1" rows="5" required> </textarea>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-info"> Enviar </button>
+                    </div>
+                </form>
+                <br>
+
+                <?php if($msg=="enviado"): ?>
+
+                <div class="alert alert-success button" role="alert">
+                    Mensagem enviada com sucesso!
                 </div>
 
+                <?php endif; ?>
 
+
+                <?php if($msg=="não_enviado"): ?>
+
+                <div class="alert alert-danger" role="alert">
+                    Mensagem não enviada!
+                </div>
+
+                
+
+                <?php endif; ?>
             </div>
         </div>
 
-
-
-
-
-
     </article>
+
+
+
+
 
     <footer>
         <div class="container">
@@ -232,16 +253,47 @@
                 </div>
 
             </div>
+
+
+            <div id="footer1"> Copyright © Beco Diagonal Papelaria - Todos os direitos reservados <br>
+                Design by Sônia Mara de Sá </div>
+
         </div>
     </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+
+    <script>
+
+        jQuery("input.telefone")
+            .mask("(99) 9999-9999?9")
+            .focusout(function (event) {
+                var target, phone, element;
+                target = (event.currentTarget) ? event.currentTarget : event.srcElement;
+                phone = target.value.replace(/\D/g, '');
+                element = $(target);
+                element.unmask();
+                if (phone.length > 10) {
+                    element.mask("(99) 99999-999?9");
+                } else {
+                    element.mask("(99) 9999-9999?9");
+                }
+            });
+
+
+    </script>
+
 </body>
 
 </html>
