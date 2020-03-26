@@ -78,7 +78,7 @@ $msg=0;
     </header>
 
 
-    <nav class="categorias navbar navbar-expand-md navbar-cat ">
+    <nav class="categorias navbar navbar-expand-md navbar-cat " id="categoria">
 
         <div >
             <span>
@@ -257,7 +257,6 @@ $msg=0;
 
         </div>
     </footer>
-
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
