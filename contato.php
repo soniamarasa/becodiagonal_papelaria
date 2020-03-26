@@ -118,14 +118,14 @@ $msg=0;
                 <li class="dropdown nav-item">
                     <a data-toggle="dropdown" class="dropdown-toggle nav-link js-scroll-trigger">Marcadores</a>
                     <ul class="dropdown-menu">
-                        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#">Marcadores Artisticos </a>
+                        <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#">Marcadores Artísticos </a>
                         </li>
                         <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#">Marca-Texto </a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link">Papeis</a>
+                    <a href="" class="nav-link">Papéis</a>
                 </li>
 
                 <li class="nav-item">
@@ -133,7 +133,7 @@ $msg=0;
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link">Washi tapes</a>
+                    <a href="" class="nav-link">Washi Tapes</a>
                 </li>
             </ul>
         </div>
