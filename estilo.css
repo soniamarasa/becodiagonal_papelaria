@@ -181,16 +181,10 @@ footer a:hover{
     font-weight: bold;
 }
 
-section {
-    
-    
-}
-
 .button {
     padding-top: 1em;
     text-align: center;
 }
-
 
 h2{
    padding: 1.5em;
@@ -209,7 +203,6 @@ legend {
 }
 
 
-
 @media (max-width: 575.98px) { 
     #imagemcab {
         height: 5em;
@@ -222,7 +215,6 @@ legend {
 
     #divBusca{
         width: 120px;
-        
     }
     
     #txtBusca{
@@ -257,13 +249,48 @@ legend {
 }
 
 #container img {
+    width: 120px;
+    height: 120px;
+	margin-top:-80px;
+    margin-bottom: 30px;
+    border-radius: 80px;
+
+}
+
+
+#containerimg {
+     display: flex;
+     justify-content: center;
+} 
+
+
+#inputimg {
+    height: 120px;
 	width: 120px;
-	height: 120px;
 	margin-top: -80px;
     margin-bottom: 30px;
     border-radius: 80px;
-    
+    text-decoration: none;
+    position: absolute;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 0.5em;
+   
 }
+
+#inputimg:hover{
+    background-color: rgba(20, 20, 20, 0.7);
+    color: white;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
 
 #cadastroc {
     text-align: justify;
@@ -273,18 +300,6 @@ legend {
     text-align: center;
     color: #736D96;
 }
-
-/*
-#containerimg {
-    background-image: url(media/perfil.png);
-    background-size: 120px;
-    width: 120px;
-	height: 120px;
-	margin-top: -80px;
-    margin-bottom: 30px;
-    border-radius: 80px;
-    
-} */
 
 .produtosslider {
    margin-bottom: 3em;
