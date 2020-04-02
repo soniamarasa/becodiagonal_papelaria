@@ -10,10 +10,13 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilocadastro.css">
     <script src="https://kit.fontawesome.com/a9b0ab3116.js" crossorigin="anonymous"></script>
 
 
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+
+    <link rel="stylesheet" href="lib/Croppie-master/croppie.css" />
 
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick-1.8.1/slick/slick.css" />
@@ -60,7 +63,6 @@
                     </li>
                 </ul>
             </div>
-
 
         </nav>
 
@@ -142,18 +144,21 @@
         <div id="container">
 
             <form action="processaCadastro.php" method="POST">
-                <div id="containerimg">
 
-                    <img id="fotoperfil" src="media/perfil.png">
+                <div id="containerperfil">
+                    <div id="containerimg">
 
-                    <div id="inputimg">
-                        <label data-toggle="tooltip" data-placement="top" title="Carregar uma foto">
-                            <input type="file" accept="image/*" name="img" id="img">
-                            <i class="fas fa-upload"></i>
-                        </label>
+                        <!-- <img id="fotoperfil" src="media/perfil.png"> -->
+                        <div id="uploaded_image"> </div>
+
+                        <div id="inputimg">
+                            <label data-toggle="tooltip" data-placement="top" title="Carregar uma foto">
+                                <input type="file" accept="image/*" name="img" id="img">
+                                <i class="fas fa-upload"></i>
+                            </label>
+                        </div>
                     </div>
                 </div>
-
 
                 <div id="cadastroc">
 
@@ -374,20 +379,125 @@
     </footer>
 
 
-    <!--><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>-->
+    <!-- MODAL CROP IMAGEM -->
+    <div id="uploadimageModal" class="modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #d1ab66;">
+                    <span id="modal" class="modal-title">Cortar Foto</span>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 text-center">
+                            <div id="image_demo" style="width:350px; margin-top:30px"></div>
+                        </div>
+                        <div class="col-md-4" style="align-items: center; display: flex; justify-content: center;">
+                            <br />
+                            <br />
+                            <br />
+                            <button class="btn btn-success crop_image">Cortar e Enviar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+
+
+    <!--  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  -->
+
+    <script src="lib/Croppie-master/croppie.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $image_crop = $('#image_demo').croppie({
+                enableExif: true,
+                viewport: {
+                    width: 200,
+                    height: 200,
+                    type: 'square' //circle
+                },
+                boundary: {
+                    width: 300,
+                    height: 300
+                }
+            });
+
+            $('#img').on('change', function () {
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    $image_crop.croppie('bind', {
+                        url: event.target.result
+                    }).then(function () {
+                        console.log('jQuery bind complete');
+                    });
+                }
+                reader.readAsDataURL(this.files[0]);
+                $('#uploadimageModal').modal('show');
+            });
+
+            $('.crop_image').click(function (event) {
+                $image_crop.croppie('result', {
+                    type: 'canvas',
+                    size: 'viewport',
+
+                }).then(function (response) {
+                    $.ajax({
+                        url: "upload.php",
+                        type: "POST",
+                        data: { "image": response },
+                        success: function (data) {
+                            $('#uploadimageModal').modal('hide');
+                            var html1 = '<img src="' + response + '" />';
+                            $('#uploaded_image').html(html1);
+                        }
+                    });
+                })
+            });
+
+        });  
+    </script>
+
+
+
+    <!-- <script>
+        var uploadfoto = document.getElementById('');
+        var fotopreview = document.getElementById('fotoperfil');
+
+        uploadfoto.addEventListener('change', function (e) {
+            showThumbnail(this.files);
+        });
+
+        function showThumbnail(files) {
+            if (files && files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    fotopreview.src = e.target.result;
+                }
+
+                reader.readAsDataURL(files[0]);
+            }
+        }
+    </script> -->
 
 
 
@@ -439,29 +549,6 @@
                 }
             });
         });
-    </script>
-
-
-
-    <script>
-        var uploadfoto = document.getElementById('img');
-        var fotopreview = document.getElementById('fotoperfil');
-
-        uploadfoto.addEventListener('change', function (e) {
-            showThumbnail(this.files);
-        });
-
-        function showThumbnail(files) {
-            if (files && files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    fotopreview.src = e.target.result;
-                }
-
-                reader.readAsDataURL(files[0]);
-            }
-        }
     </script>
 
 
