@@ -59,16 +59,25 @@ header {
     outline: none;
 }
 
+
+#carrinho {
+    color: #c4943d;
+    font-size: 2em;
+    
+}
+
+
 .categorias, .dropdown-menu{
     background-color: #c4943d;
     color: #2F2D3E;
     font-weight: bold;
-   
 }
 
 
-nav.navbar-background{
-	background:#2F2D3E;
+.navbar-background{
+    background:#2F2D3E;
+    display: flex;
+    justify-content: space-between;/*não está funcionando */
 }
 
 
@@ -230,10 +239,38 @@ legend {
 
 
 @media (max-width: 930px) { 
- #categoria{
-     font-size: 0.8em;
- }
+    #categoria{
+        font-size: 0.7em;
+    }
+   
+    #nav-principal{
+       font-size: 0.8em;
+   }
+   }
+   
+   
+   
+   @media (min-width: 768px) { 
+       #carrinho {
+           position: fixed;
+           left: 35%;
+           padding-left: 1em;
+       }
+      
+   }
+   
+   
+   @media (min-width: 1050px) { 
+       #carrinho {
+           position: fixed;
+           left: 45%;
+       }
+      
 }
+
+
+
+
 
 
 #container {

@@ -59,16 +59,35 @@ header {
     outline: none;
 }
 
+
+#pesquisa {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#menuprincipal {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#carrinho {
+    color: #c4943d;
+    font-size: 2em;
+    
+}
+
+
 .categorias, .dropdown-menu{
     background-color: #c4943d;
     color: #2F2D3E;
     font-weight: bold;
-   
 }
 
 
-nav.navbar-background{
-	background:#2F2D3E;
+.navbar-background{
+    background:#2F2D3E;
+    display: flex;
+    justify-content: space-between;/*não está funcionando */
 }
 
 
@@ -230,9 +249,36 @@ legend {
 
 @media (max-width: 930px) { 
  #categoria{
-     font-size: 0.8em;
+     font-size: 0.7em;
  }
+
+ #nav-principal{
+    font-size: 0.8em;
 }
+}
+
+
+
+@media (min-width: 768px) { 
+    #carrinho {
+        position: fixed;
+        left: 35%;
+        padding-left: 1em;
+    }
+   
+}
+
+
+@media (min-width: 1050px) { 
+    #carrinho {
+        position: fixed;
+        left: 45%;
+    }
+   
+}
+
+
+
 
 #container {
 	width: 95%;
@@ -325,4 +371,42 @@ input[type="file"] {
     color: #2F2D3E;
     font-weight: bold;
     
+}
+
+
+.principalmc {
+    margin-top: 2em;
+   
+}
+
+.ulmyaccount {
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  background-color: #d1ab66;
+}
+
+.ulmyaccount a{
+    text-decoration: none;
+    color: #2F2D3E;
+    text-size-adjust: 30px;
+}
+
+.ulmyaccount a:link{
+    color: #2F2D3E;
+
+}
+.ulmyaccount a:hover{
+    color: white;
+ 
+}
+
+#info {
+    padding: 0.4em 1em;
+    border-radius: 0.5em;
+    background-color: #C5C2D3;
+}
+
+#titulo {
+    margin-bottom: 1.5em;
 }
