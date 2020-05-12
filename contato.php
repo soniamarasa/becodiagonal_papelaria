@@ -37,6 +37,9 @@ $msg=0;
                 <i class="fas fa-search search"></i>
             </div>
 
+            <div id="carrinho">
+                <a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
 
             <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
                 <i class="fas fa-bars text-white"></i>
@@ -172,7 +175,7 @@ $msg=0;
                         <div class="form-group col-md-6">
                             <label for="phonenumber">Tel./Cel.</label>
                             <input type="tel" class="form-control telefone" name="phonenumber" id="phonenumber"
-                                aria-describedby="emailHelp">
+                                aria-describedby="emailHelp" required >
                         </div>
 
                     </div>
@@ -223,14 +226,24 @@ $msg=0;
 
 
                 <div class="col-md-3 rodape">
-                    <h5>REDES SOCIAIS</h5>
+                    <div>
+                        <h5>REDES SOCIAIS</h5>
 
-                    <div class="redessociais">
-                        <a href=""><i class="fab fa-facebook-square"></i></a>
-                        &nbsp;
-                        <a href=""> <i class="fab fa-instagram-square"></i> </a>
+                        <div class="redessociais">
+                            <a href=""><i class="fab fa-facebook-square"></i></a>
+                            &nbsp;
+                            <a href=""> <i class="fab fa-instagram-square"></i> </a>
+                        </div>
                     </div>
 
+                    <div>
+                        <h5>INSTITUCIONAL</h5>
+
+                        <ul id="listfooter">
+                            <li> <a href="duvidas.html"> Dúvidas </a></li>
+                            <li> <a href="areaadm.html"> Area Administrativa </a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="col-md-3 rodape">
@@ -253,7 +266,7 @@ $msg=0;
 
 
             <div id="footer1"> Copyright © Beco Diagonal Papelaria - Todos os direitos reservados <br>
-                Design by Sônia Mara de Sá </div>
+                Design by Sônia Mara de Sá  - 17 99187 3463</div>
 
         </div>
     </footer>

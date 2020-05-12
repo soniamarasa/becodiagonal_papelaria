@@ -4,6 +4,7 @@
 
 body {
     background-color:#f2f2f2;
+    min-width: 300px;
 }
 
 
@@ -63,9 +64,24 @@ header {
 #carrinho {
     color: #c4943d;
     font-size: 2em;
+    text-decoration: none;
     
 }
 
+#carrinho a{
+    color: #c4943d;
+
+}
+
+#carrinho a:link{
+    color: #c4943d;
+
+}
+
+#carrinho a:hover{
+    color: white;
+
+}
 
 .categorias, .dropdown-menu{
     background-color: #c4943d;
@@ -141,32 +157,56 @@ footer{
 	padding: 30px 0px 20px 0;
     position: relative;
     color: white;
-    list-style: none;
     text-decoration: none;
     margin-top: 2em;
 }
 
-footer a{
+
+#listfooter {
+    list-style: none;
     text-decoration: none;
-    color: white;
-    text-size-adjust: 30px;
+    text-align: left;
+    padding-left: 0;
+    
 }
 
-footer a:link{
+
+#listfooter a{
+    color: white;
+    
+}
+
+#listfooter a:link{
+    color: #ffffff;
+}
+
+#listfooter a:hover{
+    color:#c4943d;
+}
+
+
+.redessociais {
+
+ }
+
+.redessociais a{
+    text-decoration: none;
+    color: white;
+    /* text-size-adjust: 30px; */
+}
+
+.redessociais a:link{
     color: #c4943d;
     font-size: 50px ;
 }
-footer a:hover{
+.redessociais a:hover{
     color: #c4943d;
     font-size: 50px ;
 }
+
 
 .imgfooter {
   width: inherit;
-}
-
-.redessociais {
-   text-align: center;
 }
 
 
@@ -343,4 +383,16 @@ input[type="file"] {
    margin-left: 30px;
    margin-right: 30px;
 }
+
+
+.principalproduto {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+.imgprodmenu {
+    width: inherit;
+}
+
 
