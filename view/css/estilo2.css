@@ -1,0 +1,123 @@
+
+#pesquisa {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#menuprincipal {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#containercad img {
+    width: 120px;
+    height: 120px;
+    border-radius: 80px;
+}
+
+
+#containercadimg {
+    width: 120px;
+    height: 120px;
+    margin-top: -80px;
+    margin-bottom: 30px;
+    border-radius: 80px;
+    
+    background-size: 120px;
+
+}
+
+#containerperfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#uploaded_image {
+    position: absolute;
+    z-index: 1;
+    margin-top: 80px;
+    
+
+}
+
+
+#inputimgcad {
+    height: 120px;
+    width: 120px;
+    z-index: 2;
+    border-radius: 80px;
+    text-decoration: none;
+    position: absolute;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 0.5em;
+
+}
+
+#inputimgcad:hover {
+    background-color: rgba(20, 20, 20, 0.7);
+    color: white;
+}
+
+
+
+#modal {
+    text-transform: uppercase;
+    color: #2F2D3E;
+    font-weight: bold;
+
+}
+
+
+.principalmc {
+    margin-top: 2em;
+
+}
+
+.ulmyaccount {
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    background-color: #d1ab66;
+}
+
+.ulmyaccount a {
+    text-decoration: none;
+    color: #2F2D3E;
+    text-size-adjust: 30px;
+}
+
+.ulmyaccount a:link {
+    color: #2F2D3E;
+
+}
+
+.ulmyaccount a:hover {
+    color: white;
+
+}
+
+#info {
+    padding: 0.4em 1em;
+    border-radius: 0.5em;
+    background-color: #C5C2D3;
+}
+
+#titulo {
+    margin-bottom: 1.5em;
+}
+
+.cpfclean {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: center;
+    
+}

@@ -6,7 +6,23 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit1a52526307bb59febc15ba55bd96889c
 {
+    public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+    );
+
     public static $classMap = array (
+        'Config' => __DIR__ . '/../..' . '/model/Config.class.php',
+        'Rotas' => __DIR__ . '/../..' . '/model/Rotas.class.php',
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
         'SmartyBC' => __DIR__ . '/..' . '/smarty/smarty/libs/SmartyBC.class.php',
         'SmartyCompilerException' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',
@@ -180,11 +196,14 @@ class ComposerStaticInit1a52526307bb59febc15ba55bd96889c
         'Smarty_Variable' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_variable.php',
         'TPC_yyStackEntry' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_internal_configfileparser.php',
         'TP_yyStackEntry' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php',
+        'Template' => __DIR__ . '/../..' . '/model/Template.class.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1a52526307bb59febc15ba55bd96889c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1a52526307bb59febc15ba55bd96889c::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit1a52526307bb59febc15ba55bd96889c::$classMap;
 
         }, null, ClassLoader::class);
