@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-05-22 03:00:39
+/* Smarty version 3.1.36, created on 2020-06-06 02:55:15
   from 'C:\xampp\htdocs\becodiagonal_papelaria\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5ec724370e80f4_87726027',
+  'unifunc' => 'content_5edae973634734_34690098',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7dc92d77c1e0ac3fe0e715c8a707b9f156c4f953' => 
     array (
       0 => 'C:\\xampp\\htdocs\\becodiagonal_papelaria\\view\\index.tpl',
-      1 => 1590109206,
+      1 => 1591404912,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec724370e80f4_87726027 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5edae973634734_34690098 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Beco Diagonal - Papelaria</title>
+    <title><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -41,6 +42,10 @@ function content_5ec724370e80f4_87726027 (Smarty_Internal_Template $_smarty_tpl)
 >
     <link rel="icon" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /imagens/bdicon.png">
+
+    <?php echo '<script'; ?>
+ type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"><?php echo '</script'; ?>
+>
 
 
     <?php echo '<script'; ?>
@@ -86,22 +91,26 @@ function content_5ec724370e80f4_87726027 (Smarty_Internal_Template $_smarty_tpl)
             <div class="collapse navbar-collapse" id="nav-principal">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="sobre" class="nav-link">SOBRE</a>
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_SOBRE']->value;?>
+" class="nav-link">SOBRE</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="contato" class="nav-link">CONTATO</a>
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
+" class="nav-link">CONTATO</a>
                     </li>
 
                     <li class="nav-item divisor"></li>
 
 
                     <li class="nav-item">
-                        <a href="minhaconta" class="nav-link">MINHA CONTA</a>
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
+" class="nav-link">MINHA CONTA</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="login" class="nav-link">ENTRAR/CADASTRAR</a>
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_LOGIN']->value;?>
+" class="nav-link">ENTRAR/CADASTRAR</a>
                     </li>
                 </ul>
             </div>
@@ -111,8 +120,8 @@ function content_5ec724370e80f4_87726027 (Smarty_Internal_Template $_smarty_tpl)
 
 
         <div id="imagemcab">
-            <a href="index" class="imagembd"> <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/imagens/BDP.png" alt="Beco Diagonal Papelaria"
+            <a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
+" class="imagembd"> <img src="media/BDP.png" alt="Beco Diagonal Papelaria"
                     class="imagembd"></a>
 
         </div>
@@ -195,8 +204,7 @@ function content_5ec724370e80f4_87726027 (Smarty_Internal_Template $_smarty_tpl)
         <div class="container">
             <div class="row">
                 <div class="col-md-3 rodape">
-                    <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/imagens/beco-diagonal2.png" class="imgfooter">
+                    <img src="media/beco-diagonal2.png" class="imgfooter">
                 </div>
 
 
@@ -214,8 +222,10 @@ function content_5ec724370e80f4_87726027 (Smarty_Internal_Template $_smarty_tpl)
                     <div>
                         <h5>INSTITUCIONAL</h5>
                         <ul id="listfooter">
-                            <li> <a href="duvidas"> Dúvidas </a></li>
-                            <li> <a href="adm"> Area Administrativa </a></li>
+                            <li> <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_DUVIDAS']->value;?>
+"> Dúvidas </a></li>
+                            <li> <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_ADM']->value;?>
+"> Area Administrativa </a></li>
                         </ul>
                     </div>
                 </div>
@@ -233,8 +243,7 @@ function content_5ec724370e80f4_87726027 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="col-md-3 rodape">
                     <h5>FORMAS DE PAGAMENTO</h5>
                     <p>Débito, Crédito, boleto, depósito bancário</p>
-                    <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/imagens/bandeirascartoes.png" class="imgfooter">
+                    <img src="media/bandeirascartoes.png" class="imgfooter">
                 </div>
 
             </div>
@@ -246,9 +255,7 @@ function content_5ec724370e80f4_87726027 (Smarty_Internal_Template $_smarty_tpl)
         </div>
     </footer>
 
-
-
-
+ 
 
    <!-- BUG CROPPIE <?php echo '<script'; ?>
  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

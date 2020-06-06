@@ -2,6 +2,13 @@
  @author Sônia Mara de Sá
 */
 
+*{
+    margin: 0;
+    padding: 0;
+   
+
+}
+
 body {
     background-color:#f2f2f2;
     min-width: 300px;
@@ -93,7 +100,7 @@ header {
 .navbar-background{
     background:#2F2D3E;
     display: flex;
-    justify-content: space-between;/*não está funcionando */
+    
 }
 
 

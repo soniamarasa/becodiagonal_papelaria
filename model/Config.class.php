@@ -10,10 +10,11 @@ const SITE_EMAIL_ADM = "projetosdesa@gmail.com";
 
 
 //Informações do Banco de Dados
-const BD_HOST = "http://localhost",
+const BD_HOST = "localhost",
       BD_USER = "root",
-      BD_SENHA = "http://localhost",
-      BD_BANCO = "bdpapelaria";
+      BD_SENHA = "",
+      BD_BANCO = "bdpapelaria",
+      BD_PREFIX = "";
 
 //Informações MAILLER
     const EMAIL_HOST = "smtp.gmail.com";

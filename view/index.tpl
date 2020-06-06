@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Beco Diagonal - Papelaria</title>
+    <title>{$TITULO_SITE}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="{$GET_TEMA}/css/estilo2.css">
     <script src="https://kit.fontawesome.com/a9b0ab3116.js" crossorigin="anonymous"></script>
     <link rel="icon" href="{$GET_TEMA}/imagens/bdicon.png">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 
     <script src="{$GET_TEMA}/../lib/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
@@ -52,22 +54,22 @@
             <div class="collapse navbar-collapse" id="nav-principal">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="sobre" class="nav-link">SOBRE</a>
+                        <a href="{$PAG_SOBRE}" class="nav-link">SOBRE</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="contato" class="nav-link">CONTATO</a>
+                        <a href="{$PAG_CONTATO}" class="nav-link">CONTATO</a>
                     </li>
 
                     <li class="nav-item divisor"></li>
 
 
                     <li class="nav-item">
-                        <a href="minhaconta" class="nav-link">MINHA CONTA</a>
+                        <a href="{$PAG_MINHACONTA}" class="nav-link">MINHA CONTA</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="login" class="nav-link">ENTRAR/CADASTRAR</a>
+                        <a href="{$PAG_LOGIN}" class="nav-link">ENTRAR/CADASTRAR</a>
                     </li>
                 </ul>
             </div>
@@ -77,7 +79,7 @@
 
 
         <div id="imagemcab">
-            <a href="index" class="imagembd"> <img src="{$GET_TEMA}/imagens/BDP.png" alt="Beco Diagonal Papelaria"
+            <a href="{$GET_HOME}" class="imagembd"> <img src="media/BDP.png" alt="Beco Diagonal Papelaria"
                     class="imagembd"></a>
 
         </div>
@@ -160,7 +162,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 rodape">
-                    <img src="{$GET_TEMA}/imagens/beco-diagonal2.png" class="imgfooter">
+                    <img src="media/beco-diagonal2.png" class="imgfooter">
                 </div>
 
 
@@ -178,8 +180,8 @@
                     <div>
                         <h5>INSTITUCIONAL</h5>
                         <ul id="listfooter">
-                            <li> <a href="duvidas"> Dúvidas </a></li>
-                            <li> <a href="adm"> Area Administrativa </a></li>
+                            <li> <a href="{$PAG_DUVIDAS}"> Dúvidas </a></li>
+                            <li> <a href="{$PAG_ADM}"> Area Administrativa </a></li>
                         </ul>
                     </div>
                 </div>
@@ -197,7 +199,7 @@
                 <div class="col-md-3 rodape">
                     <h5>FORMAS DE PAGAMENTO</h5>
                     <p>Débito, Crédito, boleto, depósito bancário</p>
-                    <img src="{$GET_TEMA}/imagens/bandeirascartoes.png" class="imgfooter">
+                    <img src="media/bandeirascartoes.png" class="imgfooter">
                 </div>
 
             </div>
@@ -209,9 +211,7 @@
         </div>
     </footer>
 
-
-
-
+ 
 
    <!-- BUG CROPPIE <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
