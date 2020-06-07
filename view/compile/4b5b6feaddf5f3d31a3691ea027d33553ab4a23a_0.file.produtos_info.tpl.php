@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-06-06 04:49:24
+/* Smarty version 3.1.36, created on 2020-06-07 05:36:02
   from 'C:\xampp\htdocs\becodiagonal_papelaria\view\produtos_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5edb04344b0b13_22321579',
+  'unifunc' => 'content_5edc60a27730a6_28889923',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4b5b6feaddf5f3d31a3691ea027d33553ab4a23a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\becodiagonal_papelaria\\view\\produtos_info.tpl',
-      1 => 1591410349,
+      1 => 1591500952,
       2 => 'file',
     ),
   ),
@@ -20,33 +20,37 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5edb04344b0b13_22321579 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5edc60a27730a6_28889923 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <body>
     <div class="container principalproduto">
 
+<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
+$_smarty_tpl->tpl_vars['P']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+$_smarty_tpl->tpl_vars['P']->do_else = false;
+?>
         <div class="row ">
+
+        
             <div class="col-md-5 col-sm-4">
                 <div class="slider-for">
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-amarela.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-azul.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-laranja.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-rosa.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-roxa.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-verde.jpg"> </div>
-                </div>
+                    <div> <img class="imgprodmenu" src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img_g'];?>
+"> </div>
+               </div>
                 <br>
 
                 <div class="slider-nav produtosslider">
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-amarela.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-azul.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-laranja.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-rosa.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-roxa.jpg"> </div>
-                    <div> <img class="imgprodmenu" src="media/imagens/cadernetaspiral-verde.jpg"> </div>
+                    <div> <img class="imgprodmenu" src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img_g'];?>
+"> </div>
+                    <div> <img class="imgprodmenu" src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img_g'];?>
+"> </div>
+                    <div> <img class="imgprodmenu" src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img_g'];?>
+"> </div>
+                    <div> <img class="imgprodmenu" src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img_g'];?>
+"> </div>
                 </div>
 
 
@@ -54,28 +58,43 @@ function content_5edb04344b0b13_22321579 (Smarty_Internal_Template $_smarty_tpl)
 
             <div class="col-md-7 col-sm-6">
                 <div>
-                    <h3> NOME PRODUTO </h3>
-                    <h6> Cógido: 000000 </h6>
-
-                </div>
-
-                <div>
-                    <div> </div>
-                    <h3 class="text-primary"> R$ 00,00</h3>
-
-                    <form>
-                        <label> Qtd.</label>
-                        <input width="1em" value="1" type="number">
-                        <button class="btn btn-primary" type="submit"> Adicionar ao Carrinho</button>
-                    </form>
+                    <h3> <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_nome'];?>
+ - Modelo:<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_modelo'];?>
+</h3>
+                    <h6> Ref: <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_ref'];?>
+</h6>
+                    <br>
                 </div>
 
                 <div>
                     <dl>
                         <dt> Descrição do Produto </dt>
-                        <dd> Detalhes do produto</dd>
-                        <dt> Ficha Técnica </dt>
-                        <dd> Especificação técnica do produto. </dd>
+                        <dd> <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_desc'];?>
+</dd>
+                    </dl>
+                </div>
+
+                <div>
+                   <form>
+                        <h3 class="text-primary"> R$ <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_valor'];?>
+</h3>
+                        <label> Qtd.</label>
+                        <input width="1em" value="1" type="number">
+                        <button class="btn btn-success" type="submit"> Adicionar ao Carrinho</button>
+                    </form>
+                </div>
+
+                <div>
+                    <dl>
+                    
+                        <dt> Informações Adicionais </dt>
+                        <dd> <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_infotec'];?>
+</dd>
+                        <dd> Altura e Largura: <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_altura'];?>
+cm X <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_largura'];?>
+cm</dd>
+                        <dd> Peso: <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_peso'];?>
+ kg </dd>
                     </dl>
 
                 </div>
@@ -83,8 +102,11 @@ function content_5edb04344b0b13_22321579 (Smarty_Internal_Template $_smarty_tpl)
 
             </div>
 
+            
         </div>
-
+<?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
     </div>
 
@@ -101,7 +123,7 @@ function content_5edb04344b0b13_22321579 (Smarty_Internal_Template $_smarty_tpl)
 >
     
     <?php echo '<script'; ?>
- type="text/javascript" src="lib/slick-1.8.1/slick-1.8.1/slick/slick.min.js"><?php echo '</script'; ?>
+ type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"><?php echo '</script'; ?>
 >
 
 

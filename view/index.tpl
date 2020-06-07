@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="{$GET_TEMA}/css/estilo.css">
     <link rel="stylesheet" type="text/css" href="{$GET_TEMA}/css/estilo2.css">
     <script src="https://kit.fontawesome.com/a9b0ab3116.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="{$GET_TEMA}/imagens/bdicon.png">
+    <link rel="icon" href="{$GET_TEMA}/media/bdicon.png">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
@@ -79,7 +79,7 @@
 
 
         <div id="imagemcab">
-            <a href="{$GET_HOME}" class="imagembd"> <img src="media/BDP.png" alt="Beco Diagonal Papelaria"
+            <a href="{$GET_HOME}" class="imagembd"> <img src="{$GET_TEMA}/media/BDP.png" alt="Beco Diagonal Papelaria"
                     class="imagembd"></a>
 
         </div>
@@ -162,7 +162,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 rodape">
-                    <img src="media/beco-diagonal2.png" class="imgfooter">
+                    <img src="{$GET_TEMA}/media/beco-diagonal2.png" class="imgfooter">
                 </div>
 
 
@@ -199,7 +199,7 @@
                 <div class="col-md-3 rodape">
                     <h5>FORMAS DE PAGAMENTO</h5>
                     <p>Débito, Crédito, boleto, depósito bancário</p>
-                    <img src="media/bandeirascartoes.png" class="imgfooter">
+                    <img src="{$GET_TEMA}/media/bandeirascartoes.png" class="imgfooter">
                 </div>
 
             </div>

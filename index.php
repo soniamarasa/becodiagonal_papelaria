@@ -26,7 +26,7 @@ $smarty->assign('PAG_DUVIDAS', Rotas::pag_duvidas());
 $dados = new Conexao();
 $sql =  "SELECT * FROM categorias";
 $dados->ExecuteSQL ($sql);
-echo $dados->TotalDados();
+
 
 
 
